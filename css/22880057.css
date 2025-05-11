@@ -1,0 +1,212 @@
+:root {
+    --web-pink: #FA97C2;
+    --web-blue: #2FA0D5;
+    --web-green: #73C926;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Changa One', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 900;
+}
+
+
+/*Header*/
+
+#menu-header a {
+    display: block;
+    padding: 0 1.25rem;
+    font-weight: bold;
+    color: black;
+    font-family: 'Changa One', cursive;
+}
+
+#menu-header li a.active {
+    color: var(--web-blue);
+}
+
+#fromSearch input {
+    width: 8rem;
+}
+
+#fromSearch i {
+    color: var(--web-green);
+}
+
+
+/*Banner*/
+
+#banner {
+    background-image: url('../images/bg-banner.gif');
+}
+
+
+/*Định dạng nhiều hình anh cách lề trên và lề dưới 1 đợn 5 -3 rem*/
+
+#banner>div {
+    background: url('../images/logo_bg.png') left top no-repeat, url('../images/search_bg.png') right top no-repeat;
+    padding: 5rem 0 3 rem 0;
+}
+
+#banner a {
+    background-color: var(--web1-pink)!important;
+    font-family: 'Changa One', cursive;
+    font-size: 2rem;
+}
+
+#banner .carousel-item {
+    min-height: 15rem;
+}
+
+#banner .carousel-indicators li {
+    list-style: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 1.2rem;
+    border: none;
+    margin: 0 0.25rem;
+    position: relative;
+}
+
+.carousel-indicators li::after {
+    content: "";
+    /* Xóa nội dung số */
+}
+
+#banner-small {
+    background-image: url('../images/bg-banner.gif');
+    padding: 5px;
+}
+
+
+/* tạo dấu chấm tròn nhỏ cho carousel */
+
+#banner .carousel-indicators li span {
+    position: absolute;
+    top: 0.3rem;
+    left: 0.3rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 0.6rem;
+    border: none;
+    text-align: left;
+    text-indent: -99999px;
+    overflow: hidden;
+}
+
+#banner .carousel-indicators li.active span {
+    background-color: var(--web-green);
+}
+
+
+/* tạo dấu chấm tròn nhỏ màu xanh cho carousel khi hover */
+
+
+/*product*/
+
+.readmore {
+    color: varr(--web-blue);
+    margin-top: -4px !important;
+}
+
+.web1-text-blue {
+    color: var(--web-blue);
+}
+
+#aboutus {
+    background-color: var(--web-pink);
+}
+
+#aboutus h4 {
+    color: black;
+}
+
+#formSignUp {
+    border-radius: 10px;
+    border-style: dashed!important;
+    border-color: rgba(0, 0, 0, 0.5)!important;
+    /* Bo góc 10px cho form */
+}
+
+#news .date {
+    color: white;
+    background-color: var(--web-green);
+    width: 5rem;
+    padding: 1.5rem;
+}
+
+
+/*footer*/
+
+footer {
+    background-image: url('../images/bg-footer.gif');
+}
+
+#menu-footer a {
+    color: white;
+    font-weight: bold;
+    font-family: 'Changa One', cursive;
+    display: block;
+    padding: 0 2rem;
+}
+
+#menu-footer a.active {
+    color: var(--web-pink);
+}
+
+
+/*Modal Login*/
+
+#formLogin button[type="submit"] {
+    background-color: var(--web-blue);
+    color: white;
+}
+
+
+/*Testimonial*/
+
+#testimonials {
+    background-color: var(--web-pink);
+}
+
+#testimonials .col {
+    background: url('../images/quot.png') left top no-repeat;
+    padding-left: 3rem;
+}
+
+
+/* Cài đặt dấu phẩy bên trái của dòng chữ?
+/* Blogs*/
+
+#blogs-categories li {
+    list-style-type: none;
+    background: url('../images/marker1.png') 0 0.25rem no-repeat;
+    padding: 0 0 0.5rem 1.5rem;
+}
+
+
+/*contact*/
+
+#map {
+    height: 400px;
+    width: 100%
+}
+
+btm-primary {
+    background-color: var(--web-blue)!important;
+    border: none;
+}

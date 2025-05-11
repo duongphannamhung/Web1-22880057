@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>22880057-Web1 Project</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/459d74e3ec.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!---Web1 CSS-->
+    <link rel="stylesheet" href="css/22880057.css" />
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Web1 Logo">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu-header" aria-controls="menu-header" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="menu-header">
+                    <!--Đổi tên phần header tạo phần nút home-->
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home
+                            <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blogs.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linkLogin" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin" style="display:none">Login</a>
+                            <a class="nav-link linkLogout" href="#" onclick="logout()" style="display:none">Logout</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex my-2 my-lg-0 border rounded-pill" id="formSearch">
+                        <input class="form-control ms-3 border-0" type="text" placeholder="Search" />
+                        <button class="btn  my-2 my-sm-0" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="container">
+
+
+        <!--banner-->
+        <section class="container fluid" id="banner">
+            <div class="container text-white text-center">
+                <div id="#carousel-banner" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carousel-banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"><span></span></li>
+                        <li data-bs-target="#carousel-banner" data-bs-slide-to="1" aria-label="Second slide"><span></span></li>
+                        <li data-bs-target="#carousel-banner" data-bs-slide-to="2" aria-label="Third slide"><span></span></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <h1>Web Development<br/> for everyone</h1>
+                            <a href="gallery.html" class="btn text-bold text-uppercase text-white rounded-4 px-4">see more</a>
+                        </div>
+                        <div class="carousel-item">
+                            <h1>22880057<br/>Dương Phan Nam Hưng</h1>
+                        </div>
+                        <div class="carousel-item">
+                            <h1>Lap trinh web 1<br/> DDTX- Hoc ky- Nam hoc</h1>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="##carousel-banner" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="##carousel-banner" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!--product-->
+        <section class="container" id="products">
+
+        </section>
+
+        <!--about us-->
+        <section class="container-fluid" id="aboutus">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg-9 col-md-8 col-sm-12">
+                        <h1 class="text-white">About Us</h1>
+                        <div class="text-black-50">
+                            <img class="float-start me-3" src="images/icon-about.png" alt="About us">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi enim cum a aspernatur quasi. Laboriosam, dolor. Voluptates corrupti soluta accusamus, ipsam enim sapiente, mollitia aspernatur incidunt at beatae culpa assumenda?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <a href="about.html" class="btn btn-link readmore my-0 p-0">Read more</a>
+                        </div>
+
+                    </div>
+                    <div class="col-3 text-center">
+                        <form action="#" id="formSignUp" class="border border-3 p-3 rounded-4 overflow-auto">
+                            <h3 class="text-center text-white">Newsletter<br/> Sign Up</h3>
+                            <p class="text-black-50 mb-2">Please, write an e-mail:</p>
+                            <input type="email" name="email_signup" id="email_signup" class="form-control mt-0 mb-2">
+                            <button type="submit" class="btn btn-dark text-white float-end text-uppercase round-4 px-4 py-0"><h4 class="my-4">Sign up</h4></button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--news-->
+        <section class="container py-5" id="news">
+
+        </section>
+    </div>
+    <!--footer-->
+    <footer class="text-center container-fluid text-white py-3">
+        <ul class="nav justify-content-center py-3" id="menu-footer">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link linkLogin" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin" style="display:none">Login</a>
+                <a class="nav-link linkLogout" href="#" onclick="logout()" style="display:none">Logout</a>
+            </li>
+        </ul>
+        <p class="text-white-50"> Copyright & copy: 2025 by Dương Phan Nam Hưng - 22880057</p>
+    </footer>
+
+    <!-- Modal Login -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" id="formLogin" onsubmit="login(event)">
+                        <h3 class="text-center"> Login Form</h3>
+                        <div class="mb-3">
+                            <input type="text" name="username" id="username" placeholder="Username" class="form-control" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" name="password" id="password" placeholder="Password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="form-control btn">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <div class="texxt-danger" id="errormessage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+        const myModal = new bootstrap.Modal(
+            document.getElementById("modalId"),
+            options,
+        );
+    </script>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+
+    <!--HandlebarsJS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/22880057.js"></script>
+
+    <script id="products-template" type="text/x-handlebars-template">
+        <div class="row text-center py-5">
+            {{#each data}}
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="{{imagepath}}" alt="{{name}}" onmouseover="setActiveImagePath(this,'{{imagepath}}')" onmouseout="setActiveImagePath(this,'{{imagepath}}',false)">
+                <!--check lại khi di chuyển chuột ra phía ngoài-->
+                <h3>{{name}}</h3>
+                <p class="text-black-50">{{{summary}}}</p>
+                <a class="readmore btn btn-link pt-0" href="#" onclick="loadData('aboutus/{{id}}','detail-template','content')">
+                >Read more</a>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+
+    <script id="news-template" type="text/x-handlebars-template">
+        <h1 class="text-black-10">News</h1>
+        <div class="row py-3">
+            {{#each data}}
+            <div class="col">
+                <div class="float-start me-3">
+                    <div class="date text-white text-center rounded-4 py-1">
+                        <h3>{{date}}</h3>
+                    </div>
+                    <a href="#" class="btn btn-link readmore ps-0" onclick="loadData('news/{{id}}','details-template','content')">Read more</a>
+                </div>
+                <div>
+                    <h3>{{name}}</h3>
+                    <p class="text-black-50">{{summary}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <script id="details-template" type="text/x-handlebars-template">
+        <section class="container-fluid" id="banner-small">
+        </section>
+        {{#each data}}
+        <section class="container py-5">
+            <h1 class="pb-3">{{name}}</h1>
+            <div class="" text-black-50>{{{description}}}</div>
+        </section>
+        {{/each}}
+    </script>>
+
+
+
+
+    <script>
+        //Gọi data bằng fetch API
+        //ĐỊnh nghĩa luôn 1 hàm gọi async await để gọi data từ API
+        checkLogin();
+        loadData('products', 'products-template', 'products');
+        loadData('news', 'news-template', 'news');
+
+        function setActiveImagePath(img, imagepath, isActive = true) //mặc định bằng true để không phải truyền vào dữ liệu
+        {
+            if (isActive) {
+                img.src = imagepath.replace('.', '-active.'); // khi di chuyển chột vài thì sẽ thay hình imgepath
+            } else {
+                img.src = imagepath;
+            } // hiện tại chưa chỉ chuyển sang active, còn chuyển từ active về lại bản gốc thì chưa được
+            img.nextElementSibling.classList.toggle('web1-text-blue');
+        }
+    </script>
+
+
+</body>
+
+</html>
